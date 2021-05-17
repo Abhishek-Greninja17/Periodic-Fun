@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#000c1b;
+}
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+nav{
+        background-color: rgb(24, 23, 23);
+    border-radius: 0px 0px 50px 50px ;
+}
+nav .logo a{
+    color: aqua;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 50px;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    margin: 0 5px;
+    background: rgb(24, 23, 23);
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 8px 10px;
+}
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px cyan ;
+    transition: 0.2s;
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul{
+    top: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    border-radius: 0px 15px;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1.5px solid turquoise;
+}
+nav ul ul li a{
+    line-height: 40px;
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+/*-----------body--------------*/
+.info{
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    color: aliceblue
+
+}
+.info ul{
+    list-style-type: square;
+}
+/*------------footer----------*/
+.footer {
+    height: 180px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: aquamarine;
+    text-align: center;
+ }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 110px;
+  }
+.contactButton{
+    text-align: center;
+    width: 200px;
+    margin: 0 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-color: rgb(148, 148, 148);
+    color: rgb(3, 39, 39);
+}
+.contactButton:hover{
+    background: linear-gradient(60deg, #4affc9, #3609fd);
+}

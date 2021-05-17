@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(175, 175, 175);
+}
+nav{
+    background-color: rgb(24, 23, 23);
+    border-radius: 0px 0px 50px 50px ;
+}
+nav .logo a{
+    color: aqua;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 50px;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    margin: 0 5px;
+    background: rgb(24, 23, 23);
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 8px 10px;
+}
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px cyan ;
+    transition: 0.2s;
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul li:hover > ul{
+    top: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    border-radius: 0px 15px;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1.5px solid turquoise;
+}
+nav ul ul li a{
+    line-height: 40px;
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+/*---------logos------------*/
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: #dde1e7;
+    width: 100%;
+  }
+.icons{
+  display: flex;
+  margin: 40px 0;
+}
+.first li.shadow-1{
+    box-shadow: inset -3px -3px 7px #ffffff73,
+                inset 3px 3px 5px rgba(94,104,121,0.288);
+  }
+.first li.shadow-1 a{
+    font-size: 25px;
+}
+.first li a{
+    line-height: 70px;
+    font-size: 27px;
+    color: #b6bbc5;
+}
+.first li{
+    position: relative;
+    list-style: none;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: #dde1e7;
+    cursor: pointer;
+    box-shadow: -3px -3px 7px #ffffff73,
+                3px 3px 5px rgba(94,104,121,0.288);
+}
+.first li .fb a .fab:hover{
+    color: #4267B2;
+} 
+.first li .tweet a .fab:hover{
+    color: #1DA1F2;
+} 
+.first li .insta a .fab:hover{
+    color: #E1306C;
+} 
+.first li .ln a .fab:hover{
+    color: #2867B2;
+} 
+.first li .git a .fab:hover{
+    color: #333;
+} 
